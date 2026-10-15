@@ -1,0 +1,13 @@
+# Raw dataset: do not redistribute (check the Kaggle licence)
+data/raw/*
+!data/raw/.gitkeep
+
+# Python / Jupyter
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+
+# Model weights and large outputs
+outputs/*.bin
+outputs/*.pt

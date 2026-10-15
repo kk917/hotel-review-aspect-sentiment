@@ -1,0 +1,11 @@
+pandas
+numpy
+scikit-learn
+spacy
+matplotlib
+jupyter
+nbformat
+transformers
+torch
+datasets
+gradio
