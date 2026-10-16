@@ -39,7 +39,10 @@ sentiment and the hard cases.
 data/raw/          raw CSV (git-ignored)
 data/labelled/     hand-labelled evaluation rows
 src/pipeline.py    loading, cleaning, sentence splitting, aspect tagging, labelling sampler
+src/models.py      majority, TF-IDF+LR, RoBERTa, DeBERTa-ABSA, optional LLM prompt
+src/evaluate.py    label loading, annotation agreement (kappa), scoring by difficulty, plot
 notebooks/         01_baseline.ipynb (EDA, baselines, labelling sheet)
+                   02_model_comparison.ipynb (agreement with AI pre-labels, model comparison)
 report/            report_template.md (3,000-4,000 words, rubric-aligned)
 outputs/           figures, metrics, saved results
 ```
@@ -75,8 +78,8 @@ aggregate at aspect level instead of naming individual staff. See the report for
 ## Status
 
 - [ ] Dataset downloaded and licence checked
-- [ ] Baseline notebook runs
-- [ ] About 200 sentence-aspect rows hand-labelled
-- [ ] Transformer comparison
+- [x] Baseline notebook runs
+- [x] About 200 sentence-aspect rows labelled (AI pre-labelled, human reviewed)
+- [ ] Transformer comparison (notebook 02 written; run it and record results)
 - [ ] Demo
 - [ ] Report (3,000-4,000 words)
