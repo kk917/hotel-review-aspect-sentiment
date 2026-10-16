@@ -17,12 +17,13 @@ Word count target: 3,000-4,000 (plan: about 3,500). Budgets below match `hotel_r
 
 ## 2. Data considerations and pre-processing (about 550 words) [rubric: 15%]
 
-- Dataset: TripAdvisor hotel reviews (Kaggle): source, size, columns, licence, date range, geography.
+- Dataset: Booking.com 515K Hotel Reviews Data in Europe (Kaggle): source, size, columns used, licence (from its Kaggle page), date range (Review_Date), geography, and how you sampled 20,000 reviews.
 - Data quality: duplicates, length distribution, rating imbalance, noise (typos, slang, mixed languages).
-- Limitations: older data, not Gulf-focused, self-selected reviewers.
+- Limitations: European hotels only (not Gulf-focused), self-selected reviewers, scraped data, mostly English, scores skew high; weak labels from the positive/negative boxes are noisy.
 - Pre-processing: cleaning (what you keep and why: case, negations), sentence segmentation, aspect tagging, tokenisation.
 - Embeddings / representations: TF-IDF for the baseline, transformer embeddings for the main model.
-- Hand-labelled evaluation set: how sentences were sampled, labelled, and by whom; its size and limits.
+- Hand-labelled evaluation set: one row per sentence-aspect pair; how sentences were sampled (by difficulty group), labelled, and by whom; its size and limits.
+- Weak labels: sentences inherit the positive/negative box they were written in; explain why this is noisy and how you used it.
 
 ## 3. Pipeline and architecture design (about 900 words) [rubric: 25%]
 

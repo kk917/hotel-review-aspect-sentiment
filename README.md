@@ -4,32 +4,40 @@ MAAI 902 (Natural Language Processing & LLMs), Assessment Task 2: NLP Solution D
 
 ## Problem
 
-Hotel managers receive thousands of free-text reviews, but a single star rating or
-review-level sentiment score hides mixed opinions ("the room was excellent, but the
-staff were rude"). This project designs an NLP pipeline that turns unstructured reviews
-into **aspect-level sentiment** (cleanliness, staff, location, room, food, value, noise,
-facilities) that a manager can act on, with particular attention to hard cases:
-negation, contrast and multiple aspects in one review.
+Hotel managers receive thousands of free-text reviews, but a single score or review-level
+sentiment label hides mixed opinions ("the room was excellent, but the staff were rude").
+This project designs an NLP pipeline that turns unstructured reviews into **aspect-level
+sentiment** (cleanliness, staff, location, room, food, value, noise, facilities) that a
+manager can act on, with particular attention to hard cases: negation, contrast and
+multiple aspects in one sentence.
 
 > TODO: replace with your own one-sentence problem statement.
 
 ## Dataset
 
-TripAdvisor hotel reviews (Kaggle). **Not committed to this repo.**
+Booking.com "515K Hotel Reviews Data in Europe" (Kaggle), file `Hotel_Reviews.csv`.
+**Not committed to this repo.**
 
-1. Download the CSV from the dataset's Kaggle page and **check its licence** there.
-2. Save it as `data/raw/tripadvisor_hotel_reviews.csv`.
-3. Expected columns: a free-text review column and a 1-5 star rating column. The loader
-   in `src/pipeline.py` auto-detects common column names and raises a clear error if it
-   cannot find them.
+1. Download the CSV from the dataset's Kaggle page and **check its licence there**. Licences are
+   set per dataset, so do not reuse licence text from another dataset.
+2. Save it as `data/raw/Hotel_Reviews.csv` (on Colab: in your Drive copy of this project).
+3. The loader reads `Positive_Review`, `Negative_Review`, `Reviewer_Score` (and `Hotel_Name`),
+   samples 20,000 reviews, and treats the placeholders "No Positive" / "No Negative" as empty.
+
+Why this dataset: natural, punctuated English with separate positive and negative text boxes.
+That gives noisy sentence-level sentiment labels for free (a sentence written in the
+"Negative" box is usually negative), while a small hand-labelled set covers aspect-level
+sentiment and the hard cases.
+
+> TODO: add dataset title, author, Kaggle URL, licence and a "changes made" note here once checked.
 
 ## Repository layout
 
 ```
 data/raw/          raw CSV (git-ignored)
-data/labelled/     hand-labelled evaluation sentences
-src/pipeline.py    loading, cleaning, sentence splitting, aspect tagging, sampling
-notebooks/         01_baseline.ipynb (EDA + TF-IDF baseline)
+data/labelled/     hand-labelled evaluation rows
+src/pipeline.py    loading, cleaning, sentence splitting, aspect tagging, labelling sampler
+notebooks/         01_baseline.ipynb (EDA, baselines, labelling sheet)
 report/            report_template.md (3,000-4,000 words, rubric-aligned)
 outputs/           figures, metrics, saved results
 ```
@@ -42,30 +50,31 @@ pip install -r requirements.txt
 jupyter notebook notebooks/01_baseline.ipynb
 ```
 
+On Colab: put the project folder in Drive, mount Drive, and `%cd` into `notebooks/`.
+
 ## Pipeline (planned)
 
-1. Clean text (keep case and negations; do not strip stop words for transformers).
-2. Split reviews into sentences (spaCy sentencizer).
+1. Load a 20,000-review sample; clean text (keep case and negations).
+2. Split each text box into sentences (spaCy sentencizer), keeping the box as a weak label.
 3. Tag aspects (keyword lexicon first; improve later if time allows).
-4. Predict sentiment per aspect sentence with three models:
-   TF-IDF + logistic regression (baseline), a pretrained transformer sentiment model,
-   and optionally an LLM prompt.
-5. Evaluate on a hand-labelled set (about 150-200 sentences), overall and per difficulty
-   category (negation, contrast, multi-aspect).
+4. Predict sentiment with three models: TF-IDF + logistic regression (baseline), a pretrained
+   transformer sentiment model, and optionally an LLM prompt.
+5. Evaluate on a hand-labelled set (about 200 sentence-aspect rows), overall and per
+   difficulty category (negation, contrast, multi-aspect).
 6. Demo: notebook or small Gradio app where a pasted review returns aspect-level sentiment.
 
 ## Ethics notes
 
 Anonymise personal details in review text, treat fake or incentivised reviews as a risk,
-report performance by review length or sub-group, ground any LLM summary in source
-sentences, and aggregate at aspect level instead of naming individual staff.
-See the report for details.
+note the data's provenance (scraped from a booking site, European hotels only), report
+performance by review length or sub-group, ground any LLM summary in source sentences, and
+aggregate at aspect level instead of naming individual staff. See the report for details.
 
 ## Status
 
 - [ ] Dataset downloaded and licence checked
 - [ ] Baseline notebook runs
-- [ ] 150-200 sentences hand-labelled
+- [ ] About 200 sentence-aspect rows hand-labelled
 - [ ] Transformer comparison
 - [ ] Demo
 - [ ] Report (3,000-4,000 words)
