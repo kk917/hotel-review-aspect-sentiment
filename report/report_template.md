@@ -19,8 +19,8 @@ Word count target: 3,000-4,000 (plan: about 3,500). Budgets below match `hotel_r
 
 - Dataset: Booking.com 515K Hotel Reviews Data in Europe (Kaggle): source, size, columns used, licence (from its Kaggle page), date range (Review_Date), geography, and how you sampled 20,000 reviews.
 - Data quality: duplicates, length distribution, rating imbalance, noise (typos, slang, mixed languages).
-- Limitations: European hotels only (not Gulf-focused), self-selected reviewers, scraped data, mostly English, scores skew high; weak labels from the positive/negative boxes are noisy.
-- Pre-processing: cleaning (what you keep and why: case, negations), sentence segmentation, aspect tagging, tokenisation.
+- Limitations: European hotels only (not Gulf-focused), self-selected reviewers, scraped data, mostly English, scores skew high; weak labels from the positive/negative boxes are noisy; reviewers pre-sorted their remarks into positive and negative boxes, so a model trained here may do worse on free-form reviews.
+- Pre-processing: cleaning (what you keep and why: case, negations; restoring contractions such as "didn t" to "didn't"), the fact that the dataset has no punctuation so each text box is one comment rather than a true sentence, aspect tagging, tokenisation.
 - Embeddings / representations: TF-IDF for the baseline, transformer embeddings for the main model.
 - Hand-labelled evaluation set: one row per sentence-aspect pair; how sentences were sampled (by difficulty group), labelled, and by whom; its size and limits.
 - Weak labels: sentences inherit the positive/negative box they were written in; explain why this is noisy and how you used it.

@@ -24,8 +24,10 @@ Booking.com "515K Hotel Reviews Data in Europe" (Kaggle), file `Hotel_Reviews.cs
 3. The loader reads `Positive_Review`, `Negative_Review`, `Reviewer_Score` (and `Hotel_Name`),
    samples 20,000 reviews, and treats the placeholders "No Positive" / "No Negative" as empty.
 
-Why this dataset: natural, punctuated English with separate positive and negative text boxes.
-That gives noisy sentence-level sentiment labels for free (a sentence written in the
+Why this dataset: natural English (capitalisation and function words kept) with separate
+positive and negative text boxes. The dataset's creators stripped the punctuation, so each
+text box is treated as one short comment (called a "sentence" in the code), and contractions
+such as "didn t" are restored to "didn't". The box gives noisy sentiment labels for free (a comment written in the
 "Negative" box is usually negative), while a small hand-labelled set covers aspect-level
 sentiment and the hard cases.
 
@@ -55,7 +57,7 @@ On Colab: put the project folder in Drive, mount Drive, and `%cd` into `notebook
 ## Pipeline (planned)
 
 1. Load a 20,000-review sample; clean text (keep case and negations).
-2. Split each text box into sentences (spaCy sentencizer), keeping the box as a weak label.
+2. Treat each text box as one comment (there is no punctuation to split on), keeping the box as a weak label.
 3. Tag aspects (keyword lexicon first; improve later if time allows).
 4. Predict sentiment with three models: TF-IDF + logistic regression (baseline), a pretrained
    transformer sentiment model, and optionally an LLM prompt.

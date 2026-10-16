@@ -2,6 +2,9 @@
 
 Dataset: Booking.com "515K Hotel Reviews Data in Europe" (Kaggle), file Hotel_Reviews.csv.
 Each row has a Positive_Review box, a Negative_Review box and a Reviewer_Score (2.5-10).
+IMPORTANT: the text has had its punctuation stripped (e.g. "didn t", "wi fi"), while capital
+letters and function words are kept. There are no sentence boundaries to split on, so each
+text box is treated as ONE short comment (the code still calls it a "sentence").
 
 Steps covered here:
     load_reviews          -> read the CSV, sample reviews, clean, build one row per review
@@ -24,11 +27,11 @@ ASPECT_KEYWORDS: dict[str, list[str]] = {
     "cleanliness": ["clean", "cleaned", "cleaning", "cleanliness", "dirty", "filthy", "spotless", "dust", "dusty", "smell", "smelly", "stain", "stained", "hygiene", "mold", "mould"],
     "staff": ["staff", "service", "reception", "receptionist", "manager", "concierge", "waiter", "waitress", "housekeeping", "front desk", "employee", "rude", "friendly", "helpful", "courteous"],
     "location": ["location", "located", "walking distance", "walk", "close to", "near", "metro", "station", "beach", "central", "centrally", "centre", "center"],
-    "room": ["room", "bed", "bathroom", "shower", "pillow", "mattress", "view", "balcony", "suite", "bedroom", "air conditioning", "ac", "towel"],
+    "room": ["room", "bed", "bathroom", "shower", "pillow", "mattress", "view", "balcony", "suite", "bedroom", "air conditioning", "ac", "towel", "furniture", "decor", "decoration", "renovation", "renovated", "maintenance"],
     "food": ["food", "breakfast", "dinner", "lunch", "restaurant", "buffet", "meal", "coffee", "bar", "drinks"],
     "value": ["price", "priced", "value", "expensive", "cheap", "overpriced", "worth", "cost", "money"],
     "noise": ["noise", "noisy", "loud", "quiet", "peaceful", "thin walls", "construction"],
-    "facilities": ["pool", "gym", "spa", "wifi", "wi-fi", "internet", "parking", "elevator", "lift", "facilities", "lobby"],
+    "facilities": ["pool", "gym", "spa", "wifi", "wi-fi", "wi fi", "internet", "parking", "elevator", "lift", "facilities", "lobby"],
 }
 
 # "while" and "yet" are left out on purpose: in reviews they are mostly not contrastive ("while we were there").
@@ -49,14 +52,23 @@ OPTIONAL_COLUMNS = ["Hotel_Name"]
 # ---------------------------------------------------------------------------
 # Loading and cleaning
 # ---------------------------------------------------------------------------
+def _repair_contractions(text: str) -> str:
+    """The dataset turned apostrophes into spaces ("didn t", "I m", "it s").
+    Put them back so negations are detectable and transformers see normal English."""
+    text = re.sub(r"\b(did|does|do|is|was|were|are|has|have|had|could|would|should)n t\b", r"\1n't", text, flags=re.IGNORECASE)
+    text = re.sub(r"\b(can|won) t\b", r"\1't", text, flags=re.IGNORECASE)
+    text = re.sub(r"\b(i|we|you|they|he|she|it|that|there|what|who) (ll|ve|re|m|d|s)\b", r"\1'\2", text, flags=re.IGNORECASE)
+    return text
+
+
 def clean_text(text) -> str:
-    """Light cleaning. Case, punctuation and negations are kept on purpose:
+    """Light cleaning. Case and negations are kept on purpose (and apostrophes in contractions are restored):
     they matter for transformers and for the negation/contrast hard cases."""
     text = str(text)
     text = text.replace("’", "'").replace("‘", "'").replace("“", '"').replace("”", '"')
     text = re.sub(r"https?://\S+|www\.\S+", " ", text)
     text = re.sub(r"\s+", " ", text)
-    return text.strip()
+    return _repair_contractions(text.strip())
 
 
 def _clean_field(value) -> str:
@@ -143,6 +155,8 @@ def _get_splitter():
 def split_sentences(df: pd.DataFrame) -> pd.DataFrame:
     """One row per sentence: review_id, sent_id, sentence, field, score.
     `field` is the box the sentence was written in (positive / negative): a weak label.
+    NOTE: the text has no punctuation, so the splitter usually finds no boundaries and each
+    text box becomes ONE row (a short comment, not a true sentence).
     sent_id counts through the whole review (positive sentences first), so
     (review_id, sent_id) is a unique key."""
     split_many = _get_splitter()
