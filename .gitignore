@@ -11,3 +11,6 @@ __pycache__/
 # Model weights and large outputs
 outputs/*.bin
 outputs/*.pt
+
+.DS_Store
+anaconda_projects/
