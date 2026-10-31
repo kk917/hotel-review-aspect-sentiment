@@ -2,6 +2,8 @@
 
 MAAI 902 (Natural Language Processing & LLMs), Assessment Task 2: NLP Solution Design.
 
+Report: report/report.pdf
+
 ## Problem
 
 Hotel managers receive thousands of free-text reviews, but a single score or review-level
