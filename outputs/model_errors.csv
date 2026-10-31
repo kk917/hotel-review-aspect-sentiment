@@ -1,0 +1,120 @@
+model,difficulty,aspect,sentence,gold_sentiment,pred
+TF-IDF + LogReg (weak labels),contrast,facilities,only really used the room to sleep in rather than hotel facilities but for that purpose it was great comfy bed good shower decent sized room,neutral,positive
+TF-IDF + LogReg (weak labels),contrast,location,Location is fair but you will have some dinning options until late street food Bar tender on duty Dec 18th evening was extremely rude,neutral,negative
+TF-IDF + LogReg (weak labels),negation,value,Great location Club prices for not a club experience,negative,positive
+TF-IDF + LogReg (weak labels),contrast,staff,Plenty of choice at breakfast We had an upgrade room but had to sort out a breakfast issue which was easily dealt with by reception staff,positive,negative
+TF-IDF + LogReg (weak labels),negation,room,Staff were very welcoming and helpful Room was adequate but not exceptional Location great for access to shops bars theatres and restaurants,neutral,positive
+TF-IDF + LogReg (weak labels),contrast,room,Rooms are small but typical for Paris They were very well appointed however,neutral,negative
+TF-IDF + LogReg (weak labels),contrast,room,Room was comfortable but decor is a bit tired Breakfast choice rather limited and overpriced,neutral,negative
+TF-IDF + LogReg (weak labels),contrast,food,Location is fair but you will have some dinning options until late street food Bar tender on duty Dec 18th evening was extremely rude,neutral,negative
+TF-IDF + LogReg (weak labels),contrast,cleanliness,No major issues Only a strange room smell at start but wasnt due to cleaningess Issue only the heat as it Is from top floor and sun can be easily solved with ventilation,neutral,negative
+TF-IDF + LogReg (weak labels),contrast,food,Clean and tidy Small rooms but with everything in place Continental breakfast nothing special but OK,neutral,negative
+TF-IDF + LogReg (weak labels),contrast,room,Rooms are ok and clean but not worth the money we paid 140 If you can get a deal for under 90 per room I guess it's not a bad deal,neutral,negative
+TF-IDF + LogReg (weak labels),multi_aspect,staff,Single room 114 was tiny and dark literally a converted broom cupboard lots of apologies from the staff if they know that it's too small why continue to allow it to be booked,neutral,negative
+TF-IDF + LogReg (weak labels),plain,room,I hadn't realised the bed would be against the wall Fortunately it was so long I was able to climb round my husband without waking him,neutral,negative
+TF-IDF + LogReg (weak labels),contrast,room,Clean and tidy Small rooms but with everything in place Continental breakfast nothing special but OK,neutral,negative
+TF-IDF + LogReg (weak labels),contrast,room,Excellent location and good value for money Rooms are small but functional Air con provided essential,neutral,positive
+TF-IDF + LogReg (weak labels),contrast,cleanliness,Breakfast place so small and squeezed Rooms are old and need renovation they are clean but smells old furniture Wifi connection not strong enough,neutral,negative
+TF-IDF + LogReg (weak labels),contrast,food,Plenty of choice at breakfast We had an upgrade room but had to sort out a breakfast issue which was easily dealt with by reception staff,positive,negative
+TF-IDF + LogReg (weak labels),contrast,room,Plenty of choice at breakfast We had an upgrade room but had to sort out a breakfast issue which was easily dealt with by reception staff,positive,negative
+TF-IDF + LogReg (weak labels),contrast,value,Very expensive but for that extra special occasion worth it,neutral,negative
+TF-IDF + LogReg (weak labels),multi_aspect,cleanliness,Clean and tidy Small rooms but with everything in place Continental breakfast nothing special but OK,positive,negative
+TF-IDF + LogReg (weak labels),contrast,location,Overprized But I guess people are willing to pay for the location,positive,negative
+TF-IDF + LogReg (weak labels),plain,value,Quality accommodation at a good price,positive,negative
+TF-IDF + LogReg (weak labels),contrast,room,The beds were a bit hard We got used to them Otherwise the rooms were bigger and nicer than expected,neutral,negative
+TF-IDF + LogReg (weak labels),negation,location,Location is not the best yet not too far from the city center The immediate surroundings are not very lively but it's a good quality hotel at a reasonable price,neutral,negative
+TF-IDF + LogReg (weak labels),contrast,cleanliness,Rooms are ok and clean but not worth the money we paid 140 If you can get a deal for under 90 per room I guess it's not a bad deal,positive,negative
+TF-IDF + LogReg (weak labels),contrast,value,Location is not the best yet not too far from the city center The immediate surroundings are not very lively but it's a good quality hotel at a reasonable price,positive,negative
+TF-IDF + LogReg (weak labels),negation,location,Really nice hotel with clean and comfortable rooms Not the most central or cosy location but close to metro,neutral,positive
+TF-IDF + LogReg (weak labels),contrast,noise,The hotel was lovely really good staff and the room was very comfortable except for the noise The bar staff were very welcoming,negative,positive
+TF-IDF + LogReg (weak labels),plain,location,Reach to the city center by using metro takes time 25 minutes,negative,positive
+RoBERTa sentiment (pretrained),negation,value,Breakfast cost as this was not included in my booking the additional cost per person was 21,negative,neutral
+RoBERTa sentiment (pretrained),contrast,facilities,only really used the room to sleep in rather than hotel facilities but for that purpose it was great comfy bed good shower decent sized room,neutral,positive
+RoBERTa sentiment (pretrained),contrast,location,Location is fair but you will have some dinning options until late street food Bar tender on duty Dec 18th evening was extremely rude,neutral,negative
+RoBERTa sentiment (pretrained),plain,room,bed a bit soft desk in room a bit small,negative,neutral
+RoBERTa sentiment (pretrained),plain,room,The first room also business we were given low ceiling weird shape mezzanine type with inclined window little light And it was an interconnected room,negative,neutral
+RoBERTa sentiment (pretrained),contrast,location,Conveniently located in the heart of town but very quiet,positive,neutral
+RoBERTa sentiment (pretrained),negation,value,Great location Club prices for not a club experience,negative,positive
+RoBERTa sentiment (pretrained),negation,facilities,The room we book did not have free wifi,negative,neutral
+RoBERTa sentiment (pretrained),plain,room,Shower screen over bath leaked across the floor,negative,neutral
+RoBERTa sentiment (pretrained),negation,room,Staff were very welcoming and helpful Room was adequate but not exceptional Location great for access to shops bars theatres and restaurants,neutral,positive
+RoBERTa sentiment (pretrained),contrast,room,Rooms are small but typical for Paris They were very well appointed however,neutral,positive
+RoBERTa sentiment (pretrained),plain,location,Near to the train station and metro They gave us a free late check out until 16 00 pm and store our luggages for free as well,positive,neutral
+RoBERTa sentiment (pretrained),plain,location,Location close to tube and shops,positive,neutral
+RoBERTa sentiment (pretrained),negation,room,Having booked an executive suite being given a double room initially and the was given a room with king size bed but was not the one I initially booked,negative,neutral
+RoBERTa sentiment (pretrained),contrast,room,Room was comfortable but decor is a bit tired Breakfast choice rather limited and overpriced,neutral,negative
+RoBERTa sentiment (pretrained),contrast,food,Location is fair but you will have some dinning options until late street food Bar tender on duty Dec 18th evening was extremely rude,neutral,negative
+RoBERTa sentiment (pretrained),contrast,food,Clean and tidy Small rooms but with everything in place Continental breakfast nothing special but OK,neutral,positive
+RoBERTa sentiment (pretrained),multi_aspect,staff,Single room 114 was tiny and dark literally a converted broom cupboard lots of apologies from the staff if they know that it's too small why continue to allow it to be booked,neutral,negative
+RoBERTa sentiment (pretrained),plain,room,I hadn't realised the bed would be against the wall Fortunately it was so long I was able to climb round my husband without waking him,neutral,positive
+RoBERTa sentiment (pretrained),contrast,room,Clean and tidy Small rooms but with everything in place Continental breakfast nothing special but OK,neutral,positive
+RoBERTa sentiment (pretrained),negation,value,More like a budget hotel Not for the money,negative,neutral
+RoBERTa sentiment (pretrained),plain,room,The speaker In our room was muffled bath for 2 would have been perfect,negative,neutral
+RoBERTa sentiment (pretrained),contrast,room,Excellent location and good value for money Rooms are small but functional Air con provided essential,neutral,positive
+RoBERTa sentiment (pretrained),contrast,cleanliness,Breakfast place so small and squeezed Rooms are old and need renovation they are clean but smells old furniture Wifi connection not strong enough,neutral,negative
+RoBERTa sentiment (pretrained),contrast,value,cosy but a bit expensive for what you take back,negative,neutral
+RoBERTa sentiment (pretrained),plain,location,It was close to shopping and e Metro,positive,neutral
+RoBERTa sentiment (pretrained),contrast,food,Only so minor but possibly more Italian tomatoes cheese at breakfast,negative,neutral
+RoBERTa sentiment (pretrained),contrast,room,Hotel needs some refurbishment ie carpets and blinds Pillows very hard but lovely big bed if also a little hard,negative,neutral
+RoBERTa sentiment (pretrained),plain,room,Tiny room for 150 EUR per night,negative,neutral
+RoBERTa sentiment (pretrained),contrast,value,Very expensive but for that extra special occasion worth it,neutral,positive
+RoBERTa sentiment (pretrained),plain,location,Very close to bus subway or tram,positive,neutral
+RoBERTa sentiment (pretrained),plain,room,waiting in line to book in out small rooms,negative,neutral
+RoBERTa sentiment (pretrained),plain,room,the bedroom was a bit small,negative,neutral
+RoBERTa sentiment (pretrained),contrast,location,Overprized But I guess people are willing to pay for the location,positive,neutral
+RoBERTa sentiment (pretrained),negation,food,Breakfast cost as this was not included in my booking the additional cost per person was 21,negative,neutral
+RoBERTa sentiment (pretrained),plain,staff,Resturant staff could have been a bit more organised,negative,neutral
+RoBERTa sentiment (pretrained),contrast,room,The beds were a bit hard We got used to them Otherwise the rooms were bigger and nicer than expected,neutral,positive
+RoBERTa sentiment (pretrained),contrast,noise,A little noisy at night but it is on the Strand,negative,neutral
+RoBERTa sentiment (pretrained),contrast,room,Small room but that's Amstrdam hotels,negative,neutral
+RoBERTa sentiment (pretrained),negation,value,Rooms are ok and clean but not worth the money we paid 140 If you can get a deal for under 90 per room I guess it's not a bad deal,negative,neutral
+RoBERTa sentiment (pretrained),plain,room,They gave us to separate beds joint together and in description it was it is a double The walls were a bit tin,negative,neutral
+RoBERTa sentiment (pretrained),contrast,cleanliness,Rooms are ok and clean but not worth the money we paid 140 If you can get a deal for under 90 per room I guess it's not a bad deal,positive,neutral
+RoBERTa sentiment (pretrained),contrast,value,Location is not the best yet not too far from the city center The immediate surroundings are not very lively but it's a good quality hotel at a reasonable price,positive,neutral
+RoBERTa sentiment (pretrained),negation,room,No major issues Only a strange room smell at start but wasnt due to cleaningess Issue only the heat as it Is from top floor and sun can be easily solved with ventilation,negative,neutral
+RoBERTa sentiment (pretrained),contrast,noise,Conveniently located in the heart of town but very quiet,positive,neutral
+RoBERTa sentiment (pretrained),negation,room,Two of rooms booked had NO windows upgraded one but never communicated that was the room option,negative,neutral
+RoBERTa sentiment (pretrained),plain,room,Stairs up to the bedroom were very small and steep with luggage,negative,neutral
+RoBERTa sentiment (pretrained),negation,location,Really nice hotel with clean and comfortable rooms Not the most central or cosy location but close to metro,neutral,positive
+RoBERTa sentiment (pretrained),contrast,noise,The hotel was lovely really good staff and the room was very comfortable except for the noise The bar staff were very welcoming,negative,positive
+RoBERTa sentiment (pretrained),plain,location,Reach to the city center by using metro takes time 25 minutes,negative,neutral
+RoBERTa sentiment (pretrained),plain,location,Room too close to breakfast room door do could hear people passing,negative,neutral
+RoBERTa sentiment (pretrained),negation,facilities,Nothing to dislike No swimming pool but otherwise perfect,negative,positive
+RoBERTa sentiment (pretrained),plain,room,Room too close to breakfast room door do could hear people passing,negative,neutral
+RoBERTa sentiment (pretrained),plain,food,A wider range on the restaurant menu,negative,neutral
+RoBERTa sentiment (pretrained),plain,food,The seats in the bar area could have been a bit more comfortable,negative,neutral
+DeBERTa ABSA (pretrained),contrast,location,Location is fair but you will have some dinning options until late street food Bar tender on duty Dec 18th evening was extremely rude,neutral,positive
+DeBERTa ABSA (pretrained),multi_aspect,value,Room was comfortable but decor is a bit tired Breakfast choice rather limited and overpriced,negative,positive
+DeBERTa ABSA (pretrained),plain,room,The first room also business we were given low ceiling weird shape mezzanine type with inclined window little light And it was an interconnected room,negative,neutral
+DeBERTa ABSA (pretrained),negation,value,Great location Club prices for not a club experience,negative,positive
+DeBERTa ABSA (pretrained),negation,room,I didn't like the size of the executive rooms,negative,neutral
+DeBERTa ABSA (pretrained),contrast,room,Rooms are small but typical for Paris They were very well appointed however,neutral,negative
+DeBERTa ABSA (pretrained),contrast,room,Room was comfortable but decor is a bit tired Breakfast choice rather limited and overpriced,neutral,positive
+DeBERTa ABSA (pretrained),plain,room,Bed comfortable Free beer in the room every day,positive,neutral
+DeBERTa ABSA (pretrained),contrast,food,Location is fair but you will have some dinning options until late street food Bar tender on duty Dec 18th evening was extremely rude,neutral,negative
+DeBERTa ABSA (pretrained),contrast,cleanliness,No major issues Only a strange room smell at start but wasnt due to cleaningess Issue only the heat as it Is from top floor and sun can be easily solved with ventilation,neutral,positive
+DeBERTa ABSA (pretrained),contrast,food,Clean and tidy Small rooms but with everything in place Continental breakfast nothing special but OK,neutral,positive
+DeBERTa ABSA (pretrained),contrast,room,Rooms are ok and clean but not worth the money we paid 140 If you can get a deal for under 90 per room I guess it's not a bad deal,neutral,positive
+DeBERTa ABSA (pretrained),multi_aspect,staff,Single room 114 was tiny and dark literally a converted broom cupboard lots of apologies from the staff if they know that it's too small why continue to allow it to be booked,neutral,negative
+DeBERTa ABSA (pretrained),plain,room,I hadn't realised the bed would be against the wall Fortunately it was so long I was able to climb round my husband without waking him,neutral,negative
+DeBERTa ABSA (pretrained),multi_aspect,food,Room was comfortable but decor is a bit tired Breakfast choice rather limited and overpriced,negative,positive
+DeBERTa ABSA (pretrained),contrast,room,Clean and tidy Small rooms but with everything in place Continental breakfast nothing special but OK,neutral,negative
+DeBERTa ABSA (pretrained),contrast,room,Excellent location and good value for money Rooms are small but functional Air con provided essential,neutral,negative
+DeBERTa ABSA (pretrained),contrast,cleanliness,Breakfast place so small and squeezed Rooms are old and need renovation they are clean but smells old furniture Wifi connection not strong enough,neutral,positive
+DeBERTa ABSA (pretrained),contrast,food,Only so minor but possibly more Italian tomatoes cheese at breakfast,negative,neutral
+DeBERTa ABSA (pretrained),contrast,room,Plenty of choice at breakfast We had an upgrade room but had to sort out a breakfast issue which was easily dealt with by reception staff,positive,neutral
+DeBERTa ABSA (pretrained),contrast,value,Very expensive but for that extra special occasion worth it,neutral,negative
+DeBERTa ABSA (pretrained),plain,location,Very close to bus subway or tram,positive,negative
+DeBERTa ABSA (pretrained),contrast,location,Overprized But I guess people are willing to pay for the location,positive,neutral
+DeBERTa ABSA (pretrained),negation,food,Breakfast cost as this was not included in my booking the additional cost per person was 21,negative,neutral
+DeBERTa ABSA (pretrained),contrast,room,The beds were a bit hard We got used to them Otherwise the rooms were bigger and nicer than expected,neutral,positive
+DeBERTa ABSA (pretrained),negation,location,Location is not the best yet not too far from the city center The immediate surroundings are not very lively but it's a good quality hotel at a reasonable price,neutral,negative
+DeBERTa ABSA (pretrained),negation,value,Rooms are ok and clean but not worth the money we paid 140 If you can get a deal for under 90 per room I guess it's not a bad deal,negative,positive
+DeBERTa ABSA (pretrained),plain,room,Lighting was a bit poor in the room,negative,neutral
+DeBERTa ABSA (pretrained),negation,room,Two of rooms booked had NO windows upgraded one but never communicated that was the room option,negative,neutral
+DeBERTa ABSA (pretrained),negation,room,Pillows and bed are not comfortable at all,negative,neutral
+DeBERTa ABSA (pretrained),plain,room,Stairs up to the bedroom were very small and steep with luggage,negative,neutral
+DeBERTa ABSA (pretrained),negation,location,Really nice hotel with clean and comfortable rooms Not the most central or cosy location but close to metro,neutral,positive
+DeBERTa ABSA (pretrained),negation,facilities,Nothing to dislike No swimming pool but otherwise perfect,negative,positive
+DeBERTa ABSA (pretrained),plain,food,A wider range on the restaurant menu,negative,positive
+DeBERTa ABSA (pretrained),plain,food,The seats in the bar area could have been a bit more comfortable,negative,neutral

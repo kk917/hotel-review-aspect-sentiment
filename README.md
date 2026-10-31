@@ -20,8 +20,7 @@ multiple aspects in one sentence.
 Booking.com "515K Hotel Reviews Data in Europe" (Kaggle), file `Hotel_Reviews.csv`.
 **Not committed to this repo.**
 
-1. Download the CSV from the dataset's Kaggle page and **check its licence there**. Licences are
-   set per dataset, so do not reuse licence text from another dataset.
+1. Download the CSV from the dataset's Kaggle page.
 2. Save it as `data/raw/Hotel_Reviews.csv` (on Colab: in your Drive copy of this project).
 3. The loader reads `Positive_Review`, `Negative_Review`, `Reviewer_Score` (and `Hotel_Name`),
    samples 20,000 reviews, and treats the placeholders "No Positive" / "No Negative" as empty.
@@ -34,23 +33,23 @@ such as "didn t" are restored to "didn't". The box gives noisy sentiment labels 
 sentiment and the hard cases.
 
 **Source:** "515K Hotel Reviews Data in Europe", Kaggle dataset uploaded by `jiashenliu` (about 515,000 reviews of 1,493 European hotels, scraped from Booking.com).
-**Kaggle URL / licence:** TODO (copy the exact URL and the licence shown on the dataset's Kaggle page; the licence could not be confirmed from secondary sources).
+**Kaggle URL / licence:** https://www.kaggle.com/datasets/jiashenliu/515k-hotel-reviews-data-in-europe, published under CC0: Public Domain. The licence comes from the uploader and cannot grant rights over the Booking.com content or the reviewers' text, so the data is used for coursework only.
 **Changes made:** random sample of 20,000 reviews; text cleaned (whitespace, links, contractions restored); no other modification. The dataset is not redistributed in this repo.
 
 ## Repository layout
 
 ```
 data/raw/          raw CSV (git-ignored)
-data/labelled/     hand-labelled evaluation rows
+data/labelled/     labelled_pairs.csv: 201 hand-checked evaluation rows, with the AI draft in frozen ai_* columns
 src/pipeline.py    loading, cleaning, sentence splitting, aspect tagging, labelling sampler
-src/models.py      majority, TF-IDF+LR, RoBERTa, DeBERTa-ABSA, optional LLM prompt
+src/models.py      majority, TF-IDF+LR, RoBERTa, DeBERTa-ABSA, LLM prompt hook (not evaluated)
 src/evaluate.py    label loading, annotation agreement (kappa), scoring by difficulty, plot
 src/demo.py        PII masking, review analysis, per-aspect summary, Gradio app
 notebooks/         01_baseline.ipynb (EDA, baselines, labelling sheet)
                    02_model_comparison.ipynb (agreement with AI pre-labels, model comparison)
                    03_demo.ipynb (end-to-end demo, Gradio app)
-report/            report_template.md (3,000-4,000 words, rubric-aligned)
-outputs/           figures, metrics, saved results
+report/            report.pdf, plus main.tex and the demo figures it needs to compile
+outputs/           saved results behind the report's tables and figures
 ```
 
 ## Setup
@@ -65,8 +64,9 @@ On Colab: put the project folder in Drive, mount Drive, and `%cd` into `notebook
 
 ## Run order
 
-1. `notebooks/01_baseline.ipynb`: EDA, baselines, labelling sheet.
-2. Label `data/labelled/labelling_sheet.csv`, save as `data/labelled/labelled_pairs.csv`.
+1. `notebooks/01_baseline.ipynb`: EDA, baselines, blank labelling sheet (needs the raw CSV).
+2. `data/labelled/labelled_pairs.csv` is the finished labelled set and is already in this repo.
+   The labelling sheet from step 1 is only needed to label from scratch.
 3. `notebooks/02_model_comparison.ipynb`: agreement with the AI pre-labels, five-model comparison.
 4. `notebooks/03_demo.ipynb`: end-to-end demo and Gradio web app.
 
@@ -76,12 +76,13 @@ Seeds are fixed (`SEED=42`, `N_REVIEWS=20000`), so the sample, the labelling she
 
 1. Load a 20,000-review sample; clean text (keep case and negations).
 2. Treat each text box as one comment (there is no punctuation to split on), keeping the box as a weak label.
-3. Tag aspects (keyword lexicon first; improve later if time allows).
-4. Predict sentiment with three models: TF-IDF + logistic regression (baseline), a pretrained
-   transformer sentiment model, and optionally an LLM prompt.
-5. Evaluate on a hand-labelled set (about 200 sentence-aspect rows), overall and per
-   difficulty category (negation, contrast, multi-aspect).
-6. Demo: notebook or small Gradio app where a pasted review returns aspect-level sentiment.
+3. Tag aspects with a keyword lexicon.
+4. Compare five predictors: majority class, TF-IDF + logistic regression, RoBERTa (aspect-blind),
+   DeBERTa ABSA (aspect-aware), and the box label as a reference. A prompted LLM was considered
+   but not evaluated, because a language model drafted the labels.
+5. Evaluate on 201 hand-checked comment-aspect rows (193 scored), overall and per
+   difficulty category (negation, contrast, multi-aspect, plain).
+6. Demo: Gradio app where pasted reviews return a per-aspect summary with evidence.
 
 ## Ethics notes
 
@@ -92,9 +93,9 @@ aggregate at aspect level instead of naming individual staff. See the report for
 
 ## Status
 
-- [ ] Dataset downloaded and licence checked
+- [x] Dataset downloaded and licence checked
 - [x] Baseline notebook runs
-- [x] About 200 sentence-aspect rows labelled (AI pre-labelled, human reviewed)
+- [x] 201 comment-aspect rows labelled (AI pre-labelled, human reviewed)
 - [x] Transformer comparison (notebook 02)
-- [ ] Demo (notebook 03 written; run it in Colab)
-- [ ] Report (3,000-4,000 words)
+- [x] Demo (notebook 03)
+- [x] Report (3,000-4,000 words)

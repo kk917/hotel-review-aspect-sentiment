@@ -1,0 +1,202 @@
+review_id,sent_id,sentence,aspect,sample_group,has_negation,has_contrast,is_multi_aspect,gold_sentiment,difficulty,notes,ai_sentiment,ai_difficulty
+8241,1,Breakfast cost as this was not included in my booking the additional cost per person was 21,value,negation,TRUE,FALSE,TRUE,negative,negation,,negative,negation
+4263,0,only really used the room to sleep in rather than hotel facilities but for that purpose it was great comfy bed good shower decent sized room,facilities,contrast,FALSE,TRUE,TRUE,neutral,contrast,facilities not used,neutral,contrast
+15181,1,Location is fair but you will have some dinning options until late street food Bar tender on duty Dec 18th evening was extremely rude,location,contrast,FALSE,TRUE,TRUE,neutral,contrast,fair' = lukewarm,neutral,contrast
+8875,0,Great Highly recommended Walking distance to lys es champs 200m,location,plain,FALSE,FALSE,FALSE,positive,plain,,positive,plain
+15336,1,Room was comfortable but decor is a bit tired Breakfast choice rather limited and overpriced,value,multi_aspect,FALSE,TRUE,TRUE,negative,multi_aspect,overpriced' refers to breakfast,negative,multi_aspect
+83,0,Location is great next to railway and metro links Very generous continental breakfast and comfortable room,room,multi_aspect,FALSE,FALSE,TRUE,positive,multi_aspect,,positive,multi_aspect
+12968,1,The facilities were bad refrigerator is not working and bad bed,room,negation,TRUE,FALSE,TRUE,negative,multi_aspect,"negation is about the refrigerator, not the bed",negative,multi_aspect
+18444,0,All the staff were wonderful polite and friendly,staff,plain,FALSE,FALSE,FALSE,positive,plain,,positive,plain
+4429,0,Great room with terrace Great Pub,room,plain,FALSE,FALSE,FALSE,positive,plain,,positive,plain
+944,0,The hotel was lovely really good staff and the room was very comfortable except for the noise The bar staff were very welcoming,staff,contrast,FALSE,TRUE,TRUE,positive,multi_aspect,"except' attaches to noise, not staff",positive,multi_aspect
+17301,1,The Windows didn't open and so no fresh air Noisy air conditioning particularly noticeable at night,noise,negation,TRUE,FALSE,TRUE,negative,multi_aspect,negation is about the windows,negative,multi_aspect
+9680,0,Bed Pillows were great bed was enormous,room,plain,FALSE,FALSE,FALSE,positive,plain,,positive,plain
+851,1,The rooms looked very dated bland and uninspiring,room,plain,FALSE,FALSE,FALSE,negative,plain,,negative,plain
+1184,1,The room was not well illuminated and small,room,negation,TRUE,FALSE,FALSE,negative,negation,,negative,negation
+933,1,bed a bit soft desk in room a bit small,room,plain,FALSE,FALSE,FALSE,negative,plain,mild,negative,plain
+1871,1,The first room also business we were given low ceiling weird shape mezzanine type with inclined window little light And it was an interconnected room,room,plain,FALSE,FALSE,FALSE,negative,plain,,negative,plain
+11341,0,The room was very confortable Not too large but able to accommodate king bed which was fine We only stayed one night the hotel is very modern clean Great location next to the Invslids,room,negation,TRUE,TRUE,TRUE,positive,negation,not too large but fine' = mild,positive,negation
+8353,0,I like the location of the hotel,location,plain,FALSE,FALSE,FALSE,positive,plain,,positive,plain
+10043,1,Would prefer a larger bed Not very sound proof rooms,room,negation,TRUE,FALSE,FALSE,negative,negation,,negative,negation
+12806,1,Location is not spectacular if your not for business,location,negation,TRUE,FALSE,FALSE,negative,negation,mild; depends on trip purpose,negative,negation
+17893,0,staff fantastic nice to have a free bar breakfast good,staff,multi_aspect,FALSE,FALSE,TRUE,positive,multi_aspect,,positive,multi_aspect
+2038,0,Conveniently located in the heart of town but very quiet,location,contrast,FALSE,TRUE,TRUE,positive,contrast,but' joins two positives,positive,contrast
+2938,0,Excellent location for St Pancras Kings Cross Only a short walk away Suite was very comfortable good value for moneyand,value,multi_aspect,FALSE,FALSE,TRUE,positive,multi_aspect,,positive,multi_aspect
+10074,0,Great location Club prices for not a club experience,value,negation,TRUE,FALSE,TRUE,negative,negation,a complaint even though it sits next to praise,negative,negation
+17301,1,The Windows didn't open and so no fresh air Noisy air conditioning particularly noticeable at night,room,negation,TRUE,FALSE,TRUE,negative,negation,windows did not open,negative,negation
+11552,1,The bed was very bad hard not good for me,room,negation,TRUE,FALSE,FALSE,negative,negation,,negative,negation
+16134,1,The room was far too small Very poor value for money Wouldn't use this hotel again for that reason,value,negation,TRUE,FALSE,TRUE,negative,multi_aspect,"negation is 'wouldn't use again', not about value",negative,multi_aspect
+10375,1,I didn't like the size of the executive rooms,room,negation,TRUE,FALSE,FALSE,negative,negation,,negative,negation
+17893,0,staff fantastic nice to have a free bar breakfast good,food,multi_aspect,FALSE,FALSE,TRUE,positive,multi_aspect,,positive,multi_aspect
+12667,1,Being placed in a noisy room in the first place,room,multi_aspect,FALSE,FALSE,TRUE,negative,plain,"one complaint, two keywords",negative,plain
+15539,0,Plenty of choice at breakfast We had an upgrade room but had to sort out a breakfast issue which was easily dealt with by reception staff,staff,contrast,FALSE,TRUE,TRUE,positive,contrast,issue 'easily dealt with' by staff,positive,contrast
+5554,1,No air condittioning WIFI was free BUT was NOT secure so could not use it Bar was not available to grab a cocktail after a long day of work,food,contrast,TRUE,TRUE,TRUE,negative,negation,bar was not available',negative,negation
+11341,0,The room was very confortable Not too large but able to accommodate king bed which was fine We only stayed one night the hotel is very modern clean Great location next to the Invslids,location,negation,TRUE,TRUE,TRUE,positive,multi_aspect,,positive,multi_aspect
+15328,0,Staff were very welcoming and helpful Room was adequate but not exceptional Location great for access to shops bars theatres and restaurants,location,negation,TRUE,TRUE,TRUE,positive,multi_aspect,negation is about the room,positive,multi_aspect
+61,0,lovely cafe friendly staff great location,location,multi_aspect,FALSE,FALSE,TRUE,positive,multi_aspect,,positive,multi_aspect
+8943,1,The room we book did not have free wifi,facilities,multi_aspect,TRUE,FALSE,TRUE,negative,negation,,negative,negation
+10183,1,A little noise from the lift at night that was a bit irritating and slightly too dark in the pool area that could do with a brighten up,facilities,multi_aspect,FALSE,FALSE,TRUE,negative,multi_aspect,lift noise and dark pool area,negative,multi_aspect
+6642,1,Single room 114 was tiny and dark literally a converted broom cupboard lots of apologies from the staff if they know that it's too small why continue to allow it to be booked,room,multi_aspect,FALSE,FALSE,TRUE,negative,multi_aspect,,negative,multi_aspect
+2399,1,Shower screen over bath leaked across the floor,room,plain,FALSE,FALSE,FALSE,negative,plain,,negative,plain
+15328,0,Staff were very welcoming and helpful Room was adequate but not exceptional Location great for access to shops bars theatres and restaurants,room,negation,TRUE,TRUE,TRUE,neutral,negation,adequate but not exceptional' = lukewarm,neutral,negation
+15923,1,Room is small with no any facilities,room,negation,TRUE,FALSE,TRUE,negative,multi_aspect,no facilities' is a separate aspect,negative,multi_aspect
+9086,0,I liked how close it was to everything e g Bars banks tubes,food,plain,FALSE,FALSE,FALSE,not_applicable,plain,bars' = nearby places (location),not_applicable,plain
+7279,1,Rooms are small but typical for Paris They were very well appointed however,room,contrast,FALSE,TRUE,FALSE,neutral,contrast,mixed: small but well appointed,neutral,contrast
+11481,0,The location is good the place is clean staff are friendly but the hotel needs refurbishing is well used,staff,contrast,FALSE,TRUE,TRUE,positive,contrast,,positive,contrast
+15289,0,Room is comfortable and clean Staffs are nice and helpful,staff,multi_aspect,FALSE,FALSE,TRUE,positive,multi_aspect,,positive,multi_aspect
+2872,0,Near to the train station and metro They gave us a free late check out until 16 00 pm and store our luggages for free as well,location,plain,FALSE,FALSE,FALSE,positive,plain,,positive,plain
+15181,1,Location is fair but you will have some dinning options until late street food Bar tender on duty Dec 18th evening was extremely rude,staff,contrast,FALSE,TRUE,TRUE,negative,multi_aspect,contrast is about location,negative,multi_aspect
+5554,1,No air condittioning WIFI was free BUT was NOT secure so could not use it Bar was not available to grab a cocktail after a long day of work,facilities,contrast,TRUE,TRUE,TRUE,negative,contrast,wifi 'free BUT not secure',negative,contrast
+2761,1,Pool was really small breakfast not so good and definitely not worth 30 per person,food,multi_aspect,TRUE,FALSE,TRUE,negative,negation,not so good',negative,negation
+6890,1,Not a super great location unless you have to be at the Excel,location,negation,TRUE,FALSE,FALSE,negative,negation,mild,negative,negation
+83,0,Location is great next to railway and metro links Very generous continental breakfast and comfortable room,location,multi_aspect,FALSE,FALSE,TRUE,positive,multi_aspect,,positive,multi_aspect
+18686,0,Location close to tube and shops,location,plain,FALSE,FALSE,FALSE,positive,plain,,positive,plain
+18267,0,Having booked an executive suite being given a double room initially and the was given a room with king size bed but was not the one I initially booked,room,contrast,TRUE,TRUE,FALSE,negative,negation,got a different room than booked,negative,negation
+15336,1,Room was comfortable but decor is a bit tired Breakfast choice rather limited and overpriced,room,multi_aspect,FALSE,TRUE,TRUE,neutral,contrast,mixed: comfortable but decor tired,neutral,contrast
+1891,0,Great location and fantastic coffee shop downstairs Good value for money spacious room good storage nice windows comfy bed,location,multi_aspect,FALSE,FALSE,TRUE,positive,multi_aspect,,positive,multi_aspect
+9414,1,Nothing serious to highlight trivia really housekeeping could have left more tea bags each day,staff,negation,TRUE,FALSE,FALSE,negative,negation,very mild; 'nothing serious',negative,negation
+18425,0,Beautiful location Good breakfast and staff generally helpful and efficient,food,multi_aspect,FALSE,FALSE,TRUE,positive,multi_aspect,,positive,multi_aspect
+877,0,Location is of course fantastic Staff are really friendly I cant find fault,staff,negation,TRUE,FALSE,TRUE,positive,multi_aspect,"cant find fault' is general praise, not a real negation",positive,multi_aspect
+15902,1,Very busy in July so reception always busy and a bit slow,staff,plain,FALSE,FALSE,FALSE,negative,plain,reception slow,negative,plain
+5400,1,Location too far from the center They didn't clean on our first day there,cleanliness,negation,TRUE,FALSE,TRUE,negative,negation,didn't clean,negative,negation
+17448,0,Bed comfortable Free beer in the room every day,room,plain,FALSE,FALSE,FALSE,positive,plain,,positive,plain
+5400,1,Location too far from the center They didn't clean on our first day there,location,negation,TRUE,FALSE,TRUE,negative,multi_aspect,,negative,multi_aspect
+15181,1,Location is fair but you will have some dinning options until late street food Bar tender on duty Dec 18th evening was extremely rude,food,contrast,FALSE,TRUE,TRUE,neutral,contrast,mildly positive: dining options until late,neutral,contrast
+15895,1,No major issues Only a strange room smell at start but wasnt due to cleaningess Issue only the heat as it Is from top floor and sun can be easily solved with ventilation,cleanliness,contrast,TRUE,TRUE,TRUE,neutral,contrast,smell explicitly not due to cleanliness,neutral,contrast
+2580,0,Excellent location and good value for money Rooms are small but functional Air con provided essential,location,contrast,FALSE,TRUE,TRUE,positive,multi_aspect,,positive,multi_aspect
+1891,0,Great location and fantastic coffee shop downstairs Good value for money spacious room good storage nice windows comfy bed,food,multi_aspect,FALSE,FALSE,TRUE,positive,multi_aspect,coffee shop,positive,multi_aspect
+8871,0,Clean and tidy Small rooms but with everything in place Continental breakfast nothing special but OK,food,contrast,TRUE,TRUE,TRUE,neutral,contrast,nothing special but OK',neutral,contrast
+18950,0,Rooms and bed is good hotel is ok,room,plain,FALSE,FALSE,FALSE,positive,plain,,positive,plain
+5281,1,Rooms are ok and clean but not worth the money we paid 140 If you can get a deal for under 90 per room I guess it's not a bad deal,room,negation,TRUE,TRUE,TRUE,neutral,contrast,ok and clean but not worth the money',neutral,contrast
+6642,1,Single room 114 was tiny and dark literally a converted broom cupboard lots of apologies from the staff if they know that it's too small why continue to allow it to be booked,staff,multi_aspect,FALSE,FALSE,TRUE,neutral,multi_aspect,staff apologised; complaint is about hotel policy,neutral,multi_aspect
+11473,1,I hadn't realised the bed would be against the wall Fortunately it was so long I was able to climb round my husband without waking him,room,negation,TRUE,FALSE,FALSE,neutral,plain,flag is not a real negation; mixed tone ('Fortunately'),neutral,plain
+15336,1,Room was comfortable but decor is a bit tired Breakfast choice rather limited and overpriced,food,multi_aspect,FALSE,TRUE,TRUE,negative,multi_aspect,,negative,multi_aspect
+19613,0,Good bedding and good room design,room,plain,FALSE,FALSE,FALSE,positive,plain,,positive,plain
+8871,0,Clean and tidy Small rooms but with everything in place Continental breakfast nothing special but OK,room,contrast,TRUE,TRUE,TRUE,neutral,contrast,mixed: small but everything in place,neutral,contrast
+1891,0,Great location and fantastic coffee shop downstairs Good value for money spacious room good storage nice windows comfy bed,room,multi_aspect,FALSE,FALSE,TRUE,positive,multi_aspect,,positive,multi_aspect
+9079,0,Staff approachable and very friendly Excellent room service and quiet hotel bar with great bar staff,noise,multi_aspect,FALSE,FALSE,TRUE,positive,multi_aspect,quiet hotel bar',positive,multi_aspect
+1865,0,The location was perfect close to everything but quiet Breakfast had everything you could think of everyday,location,contrast,FALSE,TRUE,TRUE,positive,contrast,but quiet' joins two positives,positive,contrast
+18425,0,Beautiful location Good breakfast and staff generally helpful and efficient,location,multi_aspect,FALSE,FALSE,TRUE,positive,multi_aspect,,positive,multi_aspect
+1771,0,Good quiet hotel good quality good breakfast good pool and spa area variety of restaurants close by,food,multi_aspect,FALSE,FALSE,TRUE,positive,multi_aspect,,positive,multi_aspect
+9079,0,Staff approachable and very friendly Excellent room service and quiet hotel bar with great bar staff,room,multi_aspect,FALSE,FALSE,TRUE,not_applicable,multi_aspect,"room service' is service, not the room",not_applicable,multi_aspect
+11227,0,Nice location and friendly staff Short walk to Metro which was out of service due to strike for one of the days of our stay but Taxi fare to duomo was only 20,staff,contrast,FALSE,TRUE,TRUE,positive,multi_aspect,,positive,multi_aspect
+15328,0,Staff were very welcoming and helpful Room was adequate but not exceptional Location great for access to shops bars theatres and restaurants,food,negation,TRUE,TRUE,TRUE,not_applicable,multi_aspect,restaurants/bars nearby = location,not_applicable,multi_aspect
+944,0,The hotel was lovely really good staff and the room was very comfortable except for the noise The bar staff were very welcoming,room,contrast,FALSE,TRUE,TRUE,positive,contrast,very comfortable except for the noise',positive,contrast
+16697,0,Studio rooms provide excellent space to live in this hotel,room,plain,FALSE,FALSE,FALSE,positive,plain,,positive,plain
+4534,0,Good comfortable rooms Late check out,room,plain,FALSE,FALSE,FALSE,positive,plain,,positive,plain
+7432,1,More like a budget hotel Not for the money,value,negation,TRUE,FALSE,FALSE,negative,negation,Not for the money',negative,negation
+12284,1,The speaker In our room was muffled bath for 2 would have been perfect,room,plain,FALSE,FALSE,FALSE,negative,plain,mild,negative,plain
+2580,0,Excellent location and good value for money Rooms are small but functional Air con provided essential,room,contrast,FALSE,TRUE,TRUE,neutral,contrast,mixed: small but functional,neutral,contrast
+2733,0,The location is exlenent the hotel is in the heart of the West End one of London s most fashionable destination and only 5min away from Piccadilly Circus,location,plain,FALSE,FALSE,FALSE,positive,plain,,positive,plain
+9472,1,Breakfast place so small and squeezed Rooms are old and need renovation they are clean but smells old furniture Wifi connection not strong enough,cleanliness,negation,TRUE,TRUE,TRUE,neutral,contrast,mixed: clean but smells old,neutral,contrast
+11751,0,cosy but a bit expensive for what you take back,value,contrast,FALSE,TRUE,FALSE,negative,contrast,cosy but a bit expensive',negative,contrast
+17493,1,At breakfast time the staff had problems to cope with the number of people No restaurants around the hotel Better you have dinner in town before returning,staff,multi_aspect,TRUE,FALSE,TRUE,negative,multi_aspect,,negative,multi_aspect
+1771,0,Good quiet hotel good quality good breakfast good pool and spa area variety of restaurants close by,noise,multi_aspect,FALSE,FALSE,TRUE,positive,multi_aspect,quiet hotel',positive,multi_aspect
+7365,0,Staff was great but hotel oldish,staff,contrast,FALSE,TRUE,FALSE,positive,contrast,,positive,contrast
+15539,0,Plenty of choice at breakfast We had an upgrade room but had to sort out a breakfast issue which was easily dealt with by reception staff,food,contrast,FALSE,TRUE,TRUE,positive,contrast,issue resolved easily,positive,contrast
+8505,0,The room was lovely an cosy,room,plain,FALSE,FALSE,FALSE,positive,plain,,positive,plain
+13563,0,It was close to shopping and e Metro,location,plain,FALSE,FALSE,FALSE,positive,plain,,positive,plain
+14698,1,City Tax is suppose to vary from 2 5 depending on the room size class etc but looks like its 5 for every room as i stayed in a single room,room,contrast,FALSE,TRUE,FALSE,not_applicable,plain,room' = city tax per room,not_applicable,plain
+1865,0,The location was perfect close to everything but quiet Breakfast had everything you could think of everyday,food,contrast,FALSE,TRUE,TRUE,positive,multi_aspect,,positive,multi_aspect
+1891,0,Great location and fantastic coffee shop downstairs Good value for money spacious room good storage nice windows comfy bed,value,multi_aspect,FALSE,FALSE,TRUE,positive,multi_aspect,,positive,multi_aspect
+11493,1,Only so minor but possibly more Italian tomatoes cheese at breakfast,food,contrast,FALSE,TRUE,FALSE,negative,contrast,very mild suggestion,negative,contrast
+11279,1,Hotel needs some refurbishment ie carpets and blinds Pillows very hard but lovely big bed if also a little hard,room,contrast,FALSE,TRUE,FALSE,negative,contrast,mixed but mostly negative,negative,contrast
+17493,1,At breakfast time the staff had problems to cope with the number of people No restaurants around the hotel Better you have dinner in town before returning,food,multi_aspect,TRUE,FALSE,TRUE,negative,negation,no restaurants nearby,negative,negation
+2761,1,Pool was really small breakfast not so good and definitely not worth 30 per person,facilities,multi_aspect,TRUE,FALSE,TRUE,negative,multi_aspect,,negative,multi_aspect
+19573,0,The best hotel in Paris no doubt about it This hotel represents the spirit and feel of paris Incredible staff incredible service great rooms and great food,food,multi_aspect,TRUE,FALSE,TRUE,positive,multi_aspect,no doubt' is not a real negation,positive,multi_aspect
+2761,1,Pool was really small breakfast not so good and definitely not worth 30 per person,value,multi_aspect,TRUE,FALSE,TRUE,negative,negation,not worth 30 per person',negative,negation
+15539,0,Plenty of choice at breakfast We had an upgrade room but had to sort out a breakfast issue which was easily dealt with by reception staff,room,contrast,FALSE,TRUE,TRUE,positive,contrast,upgrade room,positive,contrast
+9472,1,Breakfast place so small and squeezed Rooms are old and need renovation they are clean but smells old furniture Wifi connection not strong enough,room,negation,TRUE,TRUE,TRUE,negative,multi_aspect,,negative,multi_aspect
+9079,0,Staff approachable and very friendly Excellent room service and quiet hotel bar with great bar staff,food,multi_aspect,FALSE,FALSE,TRUE,positive,multi_aspect,bar = drinks venue,positive,multi_aspect
+2938,0,Excellent location for St Pancras Kings Cross Only a short walk away Suite was very comfortable good value for moneyand,location,multi_aspect,FALSE,FALSE,TRUE,positive,multi_aspect,,positive,multi_aspect
+9568,1,Tiny room for 150 EUR per night,room,plain,FALSE,FALSE,FALSE,negative,plain,,negative,plain
+19532,1,Very expensive but for that extra special occasion worth it,value,contrast,FALSE,TRUE,FALSE,neutral,contrast,expensive but worth it (conditional),neutral,contrast
+6616,0,Very close to bus subway or tram,location,plain,FALSE,FALSE,FALSE,positive,plain,,positive,plain
+4169,0,waiting in line to book in out small rooms,room,plain,FALSE,FALSE,FALSE,negative,plain,text unclear,negative,plain
+12968,1,The facilities were bad refrigerator is not working and bad bed,facilities,negation,TRUE,FALSE,TRUE,negative,negation,,negative,negation
+15289,0,Room is comfortable and clean Staffs are nice and helpful,room,multi_aspect,FALSE,FALSE,TRUE,positive,multi_aspect,,positive,multi_aspect
+9472,1,Breakfast place so small and squeezed Rooms are old and need renovation they are clean but smells old furniture Wifi connection not strong enough,facilities,negation,TRUE,TRUE,TRUE,negative,negation,,negative,negation
+5202,1,A C was not working and they could not fix it nor did they had another room for us We opened the windows but it was very noisy We had to go to another hotel,noise,contrast,TRUE,TRUE,TRUE,negative,contrast,opened windows but very noisy,negative,contrast
+8043,1,The room was quite cramped and I had a few bites in the morning probably bed bugs,room,plain,FALSE,FALSE,FALSE,negative,plain,,negative,plain
+1865,0,The location was perfect close to everything but quiet Breakfast had everything you could think of everyday,noise,contrast,FALSE,TRUE,TRUE,positive,contrast,close to everything but quiet',positive,contrast
+8871,0,Clean and tidy Small rooms but with everything in place Continental breakfast nothing special but OK,cleanliness,contrast,TRUE,TRUE,TRUE,positive,multi_aspect,,positive,multi_aspect
+19573,0,The best hotel in Paris no doubt about it This hotel represents the spirit and feel of paris Incredible staff incredible service great rooms and great food,room,multi_aspect,TRUE,FALSE,TRUE,positive,multi_aspect,,positive,multi_aspect
+17744,0,Good location lively area at the weekends and close to the tube station,location,plain,FALSE,FALSE,FALSE,positive,plain,,positive,plain
+14760,1,the bedroom was a bit small,room,plain,FALSE,FALSE,FALSE,negative,plain,mild,negative,plain
+11481,0,The location is good the place is clean staff are friendly but the hotel needs refurbishing is well used,location,contrast,FALSE,TRUE,TRUE,positive,multi_aspect,,positive,multi_aspect
+11481,0,The location is good the place is clean staff are friendly but the hotel needs refurbishing is well used,cleanliness,contrast,FALSE,TRUE,TRUE,positive,multi_aspect,,positive,multi_aspect
+137,0,Bathroom was amazing lovely shower and bed was really comfy,room,plain,FALSE,FALSE,FALSE,positive,plain,,positive,plain
+2938,0,Excellent location for St Pancras Kings Cross Only a short walk away Suite was very comfortable good value for moneyand,room,multi_aspect,FALSE,FALSE,TRUE,positive,multi_aspect,,positive,multi_aspect
+3679,1,Room very small needs updating poor decor not good,room,negation,TRUE,FALSE,FALSE,negative,negation,,negative,negation
+10047,1,Overprized But I guess people are willing to pay for the location,location,contrast,FALSE,TRUE,FALSE,positive,contrast,implicit: people pay for the location,positive,contrast
+5754,0,Quality accommodation at a good price,value,plain,FALSE,FALSE,FALSE,positive,plain,,positive,plain
+944,0,The hotel was lovely really good staff and the room was very comfortable except for the noise The bar staff were very welcoming,food,contrast,FALSE,TRUE,TRUE,not_applicable,multi_aspect,bar staff' = staff,not_applicable,multi_aspect
+8241,1,Breakfast cost as this was not included in my booking the additional cost per person was 21,food,negation,TRUE,FALSE,TRUE,negative,negation,"about extra cost, not food quality",negative,negation
+10199,1,Resturant staff could have been a bit more organised,staff,plain,FALSE,FALSE,FALSE,negative,plain,mild,negative,plain
+5202,1,A C was not working and they could not fix it nor did they had another room for us We opened the windows but it was very noisy We had to go to another hotel,room,contrast,TRUE,TRUE,TRUE,negative,negation,"A/C not working, no other room",negative,negation
+18425,0,Beautiful location Good breakfast and staff generally helpful and efficient,staff,multi_aspect,FALSE,FALSE,TRUE,positive,multi_aspect,,positive,multi_aspect
+11227,0,Nice location and friendly staff Short walk to Metro which was out of service due to strike for one of the days of our stay but Taxi fare to duomo was only 20,location,contrast,FALSE,TRUE,TRUE,positive,contrast,metro out of service but taxi cheap,positive,contrast
+15819,0,Very comfortable room and bathroom facilities,room,multi_aspect,FALSE,FALSE,TRUE,positive,plain,"one phrase, two keywords",positive,plain
+10488,0,The location of this hotel was absolutely perfect The subway was literally 1 minute from the hotel enterance The staff where superb Honestly I can't complain about anything I will definitely go there again,location,negation,TRUE,FALSE,TRUE,positive,multi_aspect,,positive,multi_aspect
+12667,1,Being placed in a noisy room in the first place,noise,multi_aspect,FALSE,FALSE,TRUE,negative,plain,,negative,plain
+3481,1,The beds were a bit hard We got used to them Otherwise the rooms were bigger and nicer than expected,room,plain,FALSE,FALSE,FALSE,neutral,contrast,mixed; 'Otherwise' acts as contrast (not in word list),neutral,contrast
+14736,1,Unfortunately one time we tried to get off the parking lot they forgot to open the beam for us and we had to phone them to open it,facilities,plain,FALSE,FALSE,FALSE,negative,plain,parking,negative,plain
+2622,0,Staff were cooperative and they did the check in and out very quickly in professional way,staff,plain,FALSE,FALSE,FALSE,positive,plain,,positive,plain
+18589,1,A little noisy at night but it is on the Strand,noise,contrast,FALSE,TRUE,FALSE,negative,contrast,mild,negative,contrast
+15923,1,Room is small with no any facilities,facilities,negation,TRUE,FALSE,TRUE,negative,negation,,negative,negation
+10413,1,Small room but that's Amstrdam hotels,room,contrast,FALSE,TRUE,FALSE,negative,contrast,"mild, accepting tone",negative,contrast
+17951,1,Location is not the best yet not too far from the city center The immediate surroundings are not very lively but it's a good quality hotel at a reasonable price,location,contrast,TRUE,TRUE,TRUE,neutral,negation,not the best yet not too far' = mixed,neutral,negation
+9079,0,Staff approachable and very friendly Excellent room service and quiet hotel bar with great bar staff,staff,multi_aspect,FALSE,FALSE,TRUE,positive,multi_aspect,,positive,multi_aspect
+5281,1,Rooms are ok and clean but not worth the money we paid 140 If you can get a deal for under 90 per room I guess it's not a bad deal,value,negation,TRUE,TRUE,TRUE,negative,negation,conditional: ok only at lower price,negative,negation
+16134,1,The room was far too small Very poor value for money Wouldn't use this hotel again for that reason,room,negation,TRUE,FALSE,TRUE,negative,multi_aspect,,negative,multi_aspect
+15870,1,Lighting was a bit poor in the room,room,plain,FALSE,FALSE,FALSE,negative,plain,mild,negative,plain
+17835,1,They gave us to separate beds joint together and in description it was it is a double The walls were a bit tin,room,plain,FALSE,FALSE,FALSE,negative,plain,,negative,plain
+5281,1,Rooms are ok and clean but not worth the money we paid 140 If you can get a deal for under 90 per room I guess it's not a bad deal,cleanliness,negation,TRUE,TRUE,TRUE,positive,contrast,,positive,contrast
+17951,1,Location is not the best yet not too far from the city center The immediate surroundings are not very lively but it's a good quality hotel at a reasonable price,value,contrast,TRUE,TRUE,TRUE,positive,contrast,,positive,contrast
+15895,1,No major issues Only a strange room smell at start but wasnt due to cleaningess Issue only the heat as it Is from top floor and sun can be easily solved with ventilation,room,contrast,TRUE,TRUE,TRUE,negative,negation,mild: 'No major issues',negative,negation
+16876,0,Really nice hotel with clean and comfortable rooms Not the most central or cosy location but close to metro,room,negation,TRUE,TRUE,TRUE,positive,multi_aspect,,positive,multi_aspect
+11203,0,We liked the location Within walking distance to the Eiffel Tower,location,plain,FALSE,FALSE,FALSE,positive,plain,,positive,plain
+11506,1,Room too close to breakfast room door do could hear people passing,food,multi_aspect,FALSE,FALSE,TRUE,not_applicable,plain,complaint is about room position near breakfast room,not_applicable,plain
+2038,0,Conveniently located in the heart of town but very quiet,noise,contrast,FALSE,TRUE,TRUE,positive,contrast,,positive,contrast
+1325,0,Two of rooms booked had NO windows upgraded one but never communicated that was the room option,room,negation,TRUE,TRUE,FALSE,negative,negation,,negative,negation
+6164,0,Very important the toilet is away from the lounge bedroom very good liked it,room,plain,FALSE,FALSE,FALSE,positive,plain,,positive,plain
+10183,1,A little noise from the lift at night that was a bit irritating and slightly too dark in the pool area that could do with a brighten up,noise,multi_aspect,FALSE,FALSE,TRUE,negative,multi_aspect,,negative,multi_aspect
+12538,0,The staff were like good friends,staff,plain,FALSE,FALSE,FALSE,positive,plain,,positive,plain
+16936,1,Bathroom door was slightly broken awkwardly designed Hit lamp or desk every time entering or exiting it,room,plain,FALSE,FALSE,FALSE,negative,plain,,negative,plain
+9472,1,Breakfast place so small and squeezed Rooms are old and need renovation they are clean but smells old furniture Wifi connection not strong enough,food,negation,TRUE,TRUE,TRUE,negative,multi_aspect,,negative,multi_aspect
+11341,0,The room was very confortable Not too large but able to accommodate king bed which was fine We only stayed one night the hotel is very modern clean Great location next to the Invslids,cleanliness,negation,TRUE,TRUE,TRUE,positive,multi_aspect,,positive,multi_aspect
+19573,0,The best hotel in Paris no doubt about it This hotel represents the spirit and feel of paris Incredible staff incredible service great rooms and great food,staff,multi_aspect,TRUE,FALSE,TRUE,positive,multi_aspect,,positive,multi_aspect
+11110,1,Pillows and bed are not comfortable at all,room,negation,TRUE,FALSE,FALSE,negative,negation,,negative,negation
+4892,0,There was a mix up with a payment and they nearly charged us twice for breakfast Fortunately we had the receipt,food,plain,FALSE,FALSE,FALSE,not_applicable,plain,"billing issue, not food",not_applicable,plain
+2988,1,Stairs up to the bedroom were very small and steep with luggage,room,plain,FALSE,FALSE,FALSE,negative,plain,,negative,plain
+16876,0,Really nice hotel with clean and comfortable rooms Not the most central or cosy location but close to metro,location,negation,TRUE,TRUE,TRUE,neutral,negation,mixed: not most central but close to metro,neutral,negation
+944,0,The hotel was lovely really good staff and the room was very comfortable except for the noise The bar staff were very welcoming,noise,contrast,FALSE,TRUE,TRUE,negative,contrast,except for the noise',negative,contrast
+13337,0,Cleanliness could be better restaurant and bar not appealing,food,negation,TRUE,FALSE,TRUE,negative,negation,not appealing',negative,negation
+2989,0,Great location Older hotel but the staff is keen to be helpful,location,contrast,FALSE,TRUE,TRUE,positive,multi_aspect,,positive,multi_aspect
+16876,0,Really nice hotel with clean and comfortable rooms Not the most central or cosy location but close to metro,cleanliness,negation,TRUE,TRUE,TRUE,positive,multi_aspect,,positive,multi_aspect
+9081,0,The property was very moder and clean,cleanliness,plain,FALSE,FALSE,FALSE,positive,plain,,positive,plain
+17119,1,Reach to the city center by using metro takes time 25 minutes,location,plain,FALSE,FALSE,FALSE,negative,plain,mild,negative,plain
+11506,1,Room too close to breakfast room door do could hear people passing,location,multi_aspect,FALSE,FALSE,TRUE,negative,plain,close to' = room position,not_applicable,plain
+2580,0,Excellent location and good value for money Rooms are small but functional Air con provided essential,value,contrast,FALSE,TRUE,TRUE,positive,multi_aspect,,positive,multi_aspect
+13147,0,Great room Bath and separate shower Very roomy,room,plain,FALSE,FALSE,FALSE,positive,plain,,positive,plain
+19378,0,friendliness and politeness of all staff,staff,plain,FALSE,FALSE,FALSE,positive,plain,,positive,plain
+11843,1,Nothing to dislike No swimming pool but otherwise perfect,facilities,contrast,TRUE,TRUE,FALSE,negative,negation,No swimming pool but otherwise perfect'; mild,negative,negation
+10488,0,The location of this hotel was absolutely perfect The subway was literally 1 minute from the hotel enterance The staff where superb Honestly I can't complain about anything I will definitely go there again,staff,negation,TRUE,FALSE,TRUE,positive,multi_aspect,,positive,multi_aspect
+61,0,lovely cafe friendly staff great location,staff,multi_aspect,FALSE,FALSE,TRUE,positive,multi_aspect,,positive,multi_aspect
+11506,1,Room too close to breakfast room door do could hear people passing,room,multi_aspect,FALSE,FALSE,TRUE,negative,plain,,negative,plain
+10404,1,The continental breakfast was pedestrian I would have really like more than one type of bread and the yoghurts were poor quality,food,plain,FALSE,FALSE,FALSE,negative,plain,,negative,plain
+8943,1,The room we book did not have free wifi,room,multi_aspect,TRUE,FALSE,TRUE,not_applicable,plain,"complaint is about wifi, not the room",not_applicable,plain
+877,0,Location is of course fantastic Staff are really friendly I cant find fault,location,negation,TRUE,FALSE,TRUE,positive,multi_aspect,,positive,multi_aspect
+83,0,Location is great next to railway and metro links Very generous continental breakfast and comfortable room,food,multi_aspect,FALSE,FALSE,TRUE,positive,multi_aspect,,positive,multi_aspect
+13337,0,Cleanliness could be better restaurant and bar not appealing,cleanliness,negation,TRUE,FALSE,TRUE,negative,multi_aspect,could be better',negative,multi_aspect
+15328,0,Staff were very welcoming and helpful Room was adequate but not exceptional Location great for access to shops bars theatres and restaurants,staff,negation,TRUE,TRUE,TRUE,positive,multi_aspect,,positive,multi_aspect
+15289,0,Room is comfortable and clean Staffs are nice and helpful,cleanliness,multi_aspect,FALSE,FALSE,TRUE,positive,multi_aspect,,positive,multi_aspect
+15878,1,Really small rooms and the shower has terrible water pressure which makes it difficult to wash long hair,room,plain,FALSE,FALSE,FALSE,negative,plain,,negative,plain
+2989,0,Great location Older hotel but the staff is keen to be helpful,staff,contrast,FALSE,TRUE,TRUE,positive,contrast,,positive,contrast
+16702,1,A wider range on the restaurant menu,food,plain,FALSE,FALSE,FALSE,negative,plain,mild,negative,plain
+11874,1,Bedroom was too hot the air on wont drop below 18c and the ceiling fan didn't seem to cool room down,room,negation,TRUE,FALSE,FALSE,negative,negation,,negative,negation
+15819,0,Very comfortable room and bathroom facilities,facilities,multi_aspect,FALSE,FALSE,TRUE,positive,plain,"one phrase, two keywords",positive,plain
+4263,0,only really used the room to sleep in rather than hotel facilities but for that purpose it was great comfy bed good shower decent sized room,room,contrast,FALSE,TRUE,TRUE,positive,contrast,for that purpose it was great',positive,contrast
+10074,0,Great location Club prices for not a club experience,location,negation,TRUE,FALSE,TRUE,positive,multi_aspect,,positive,multi_aspect
+6453,1,The seats in the bar area could have been a bit more comfortable,food,plain,FALSE,FALSE,FALSE,negative,plain,bar seating; mild,negative,plain
+1771,0,Good quiet hotel good quality good breakfast good pool and spa area variety of restaurants close by,facilities,multi_aspect,FALSE,FALSE,TRUE,positive,multi_aspect,,positive,multi_aspect

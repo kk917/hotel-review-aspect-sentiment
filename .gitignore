@@ -14,4 +14,3 @@ outputs/*.pt
 
 .DS_Store
 anaconda_projects/
-outputs/

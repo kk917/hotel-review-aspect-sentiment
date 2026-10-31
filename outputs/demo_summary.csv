@@ -1,0 +1,9 @@
+aspect,positive,neutral,negative,mentions,net_score
+noise,0,0,1,1,-1.0
+staff,0,0,1,1,-1.0
+cleanliness,0,0,2,2,-1.0
+facilities,0,1,1,2,-0.5
+food,0,1,0,1,0.0
+room,2,0,1,3,0.33
+location,1,0,0,1,1.0
+value,1,0,0,1,1.0

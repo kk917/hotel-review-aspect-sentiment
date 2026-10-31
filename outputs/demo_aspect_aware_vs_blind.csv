@@ -1,0 +1,7 @@
+review,sentence,aspect,aspect-aware ABSA,aspect-blind RoBERTa
+1,"The room was excellent, but the staff were rude.",staff,negative,positive
+1,"The room was excellent, but the staff were rude.",room,positive,positive
+2,The breakfast wasn't bad but the wifi didn't work.,food,positive,neutral
+2,The breakfast wasn't bad but the wifi didn't work.,facilities,neutral,neutral
+3,Not the cleanest hotel but the location is perfect and staff were helpful.,staff,positive,positive
+3,Not the cleanest hotel but the location is perfect and staff were helpful.,location,positive,positive

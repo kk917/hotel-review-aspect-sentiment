@@ -1,0 +1,2 @@
+review_id,sent_id,aspect,sentence,gold_sentiment,ai_sentiment
+11506,1,location,Room too close to breakfast room door do could hear people passing,negative,not_applicable

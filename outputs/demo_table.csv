@@ -1,0 +1,13 @@
+review,sentence,aspect,sentiment
+1,"The room was excellent, but the staff were rude at check in.",staff,negative
+1,"The room was excellent, but the staff were rude at check in.",room,positive
+2,Location was perfect and the breakfast was good.,location,positive
+2,Location was perfect and the breakfast was good.,food,neutral
+2,The wifi didn't work and the street was noisy at night.,noise,negative
+2,The wifi didn't work and the street was noisy at night.,facilities,negative
+3,Not a clean hotel at all.,cleanliness,negative
+3,Bathroom was dirty and we were charged for things we didn't use.,cleanliness,negative
+3,Bathroom was dirty and we were charged for things we didn't use.,room,negative
+4,"Great value for the price, very comfy beds and a lovely pool.",room,positive
+4,"Great value for the price, very comfy beds and a lovely pool.",value,positive
+4,"Great value for the price, very comfy beds and a lovely pool.",facilities,neutral
